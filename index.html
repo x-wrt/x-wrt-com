@@ -65,7 +65,7 @@
        <p class="more">更多功能和服务正在全力开发中，敬请期待</p>
      </div>
    </div>
-   <div class="container_end"><div>
+   <div class="container_end"><div id="preloadimg" style="visibility: hidden"></div></div>
    <footer class="foot">
         <p class="p1">QQ群：131750901&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;微信群：暂无</p>
         <p class="p2">Copyright&nbsp;&copy;&nbsp;2019&nbsp;X-Wrt Team.保留所有权利。</p>
@@ -82,6 +82,7 @@ var setImage = function()
 	document.getElementsByClassName("container")[0].style.backgroundSize="580px";
 	img_idx++;
 	if (img_idx >= 5) img_idx = 0;
+	document.getElementById("preloadimg").style.backgroundImage = "url(./images/image" + img_idx + ".png)";
 }
 setImage();
 var it = setInterval(setImage, 5000);
