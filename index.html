@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./index.css">
     <script src="./nodejs/jquery/dist/jquery.js"></script>
     <script src="./nodejs/bootstrap/dist/js/bootstrap.min.js"></script>
-    
 </head>
 <body>
    <header class="head">
@@ -72,4 +71,19 @@
         <p class="p2">Copyright&nbsp;&copy;&nbsp;2019&nbsp;X-Wrt Team.保留所有权利。</p>
    </footer>
 </body>
+<s>
+<script type="text/javascript">
+var img_idx=0;
+var setImage = function()
+{
+	document.getElementsByClassName("container")[0].style.backgroundImage = "url(./images/image" + img_idx + ".png)";
+	document.getElementsByClassName("container")[0].style.backgroundRepeat = "no-repeat";
+	document.getElementsByClassName("container")[0].style.backgroundPosition = "right";
+	document.getElementsByClassName("container")[0].style.backgroundSize="580px";
+	img_idx++;
+	if (img_idx >= 5) img_idx = 0;
+}
+setImage();
+var it = setInterval(setImage, 5000);
+</script>
 </html>
