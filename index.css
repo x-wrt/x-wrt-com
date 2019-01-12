@@ -85,7 +85,7 @@ ul {
 .maincontainer {
     width: 55%;
     max-width: 680px;
-    min-width: 380px;
+    min-width: 420px;
     background: rgba(42,47,61,1);
     padding: 0px 20px 0px 53px;
 }
