@@ -18,6 +18,10 @@ ul {
     margin-left: 29px;
     line-height: 42px;
 }
+.left >span {
+    color: white;
+}
+
 .right {
     float: right;
 }
