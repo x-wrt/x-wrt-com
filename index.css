@@ -96,7 +96,7 @@ ul {
     height: 20px;
     left: 10px;
     margin-top: 4px;
-    background-image: url(./img/new.png)
+    background-image: url(./_img/new.png)
 }
 .tab-text {
     padding-left: 75px;
