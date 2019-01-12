@@ -21,6 +21,10 @@ ul {
 .left >span {
     color: white;
 }
+.left > a {
+    color: white;
+    text-decoration: none;
+}
 
 .right {
     float: right;
