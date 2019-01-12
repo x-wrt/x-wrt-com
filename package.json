@@ -1,0 +1,10 @@
+{
+  "name": "x-wrt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "3",
+    "jquery": "^3.3.1"
+  }
+}
