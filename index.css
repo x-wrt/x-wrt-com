@@ -36,7 +36,7 @@ ul {
     color: white;
     font-size: 24px;
     line-height: 42px;
-    background-image: url(./img/logo.png)
+    background-image: url(./images/logo.png)
 }
 .menu > li {
     height: 45px;
@@ -96,7 +96,7 @@ ul {
     height: 20px;
     left: 10px;
     margin-top: 4px;
-    background-image: url(./_img/new.png)
+    background-image: url(./images/new.png)
 }
 .tab-text {
     padding-left: 75px;
@@ -109,7 +109,7 @@ ul {
     top: 10px;
     right: 10px;
     height: 10px;
-    background-image: url(./img/right.png)
+    background-image: url(./images/right.png)
 }
 .anniu {
     padding: 15px 0;
@@ -121,7 +121,7 @@ ul {
     width: 126px;
     line-height: 28px;
     text-align: center;
-    background-image: url(./img/Button.png);
+    background-image: url(./images/Button.png);
     font-size: 14px;
     text-decoration: none;
 }
