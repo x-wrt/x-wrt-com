@@ -66,8 +66,8 @@ ul {
 
 .maincontainer {
     width: 55%;
-    max-width: 700px;
-    min-width: 380px;
+    max-width: 680px;
+    min-width: 300px;
 }
 
 .container_end {
@@ -83,7 +83,7 @@ ul {
     padding: 47px 46px 30px 33px;
     //min-height: 900px;
     background-image: url(./images/image.png);
-    background-size: 45%;
+    //background-size: 45%;
     background-repeat:no-repeat;
     background-position: right;
 }
@@ -91,6 +91,7 @@ ul {
 
 }
 .decoration > span {
+    background: rgba(42,47,61,1);
     color: white;
     height: 21px;
     font-size: 18px;
