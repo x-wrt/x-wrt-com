@@ -108,6 +108,9 @@ var setImage = function()
 	document.getElementById("dis-img").src = "./images/image" + img_idx + ".png"
     img_idx++;
     if (img_idx >= 5) img_idx = 0;
+    document.getElementsByClassName("image")[0].style.backgroundImage = "url(./images/image" + img_idx + ".png)";
+    document.getElementsByClassName("image")[0].style.backgroundRepeat = "no-repeat";
+    document.getElementsByClassName("image")[0].style.backgroundSize="0pt";
 }
 setImage();
 var it = setInterval(setImage, 5000);
