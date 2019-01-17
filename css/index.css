@@ -1,0 +1,237 @@
+@media (max-width: 640px) {
+  .zong {
+    width: 479px;
+  }
+}
+@media (max-width: 450px) {
+  .zong {
+    width: 410px;
+  }
+}
+@media (max-width: 375px) {
+  .zong {
+    width: 363px;
+  }
+}
+@media (max-width: 325px) {
+  .zong {
+    width: 320px;
+  }
+  .body {
+    margin-top: 50px;
+  }
+}
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+ul {
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 30px;
+}
+.head {
+  width: 100%;
+  background: #191925;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  overflow: visible;
+}
+.head .brand {
+  float: left;
+  display: block;
+  margin-left: -20px;
+  font-size: 20px;
+  padding: 4px 20px 1px;
+  line-height: 40px;
+}
+.head .navs {
+  display: block;
+  float: right;
+  position: relative;
+  right: 0;
+  top: 5px;
+}
+.head .navs .dropdown {
+  display: block;
+  float: left;
+  position: relative;
+  line-height: 18px;
+  padding: 0 20px;
+}
+.head .navs .dropdown .menu {
+  display: block;
+  line-height: 19px;
+  padding: 10px 10px 11px;
+  text-decoration: none;
+  color: #bfbfbf;
+}
+.head .navs .dropdown :hover {
+  color: white;
+}
+.head .navs .dropdown a.menu:after {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  content: "&darr;";
+  text-indent: -99999px;
+  vertical-align: top;
+  margin-top: 8px;
+  margin-left: 8px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+  opacity: 0.5;
+}
+.head .navs .dropdown .dropdown-menu {
+  width: 60px;
+  height: 144px;
+  margin: 0;
+  left: -15px;
+  background-color: #4e4e59;
+}
+.head .navs .dropdown .dropdown-menu li {
+  height: 48px;
+  border-bottom: 1px solid #404049;
+}
+.head .navs .dropdown .dropdown-menu li a {
+  text-align: center;
+  color: #fff;
+  padding: 3px 5px;
+  text-decoration: none;
+  line-height: 36px;
+}
+.head .navs .dropdown .dropdown-menu li :hover {
+  color: #00FF6C;
+}
+.head .navs .dropdown .dropdown-menu .last {
+  border: 0;
+}
+.head .navs .about {
+  display: block;
+  float: left;
+  line-height: 18px;
+}
+.head .navs .about a {
+  display: block;
+  line-height: 19px;
+  padding: 10px 10px 11px;
+  text-decoration: none;
+  color: #bfbfbf;
+}
+.head .navs .about :hover {
+  color: white;
+}
+.body {
+  height: 100%;
+  background: #2a2f3d;
+  padding: 50px 0px 0px 0px;
+}
+.body .bd-left {
+  padding-right: 30px;
+  padding-top: 50px;
+  float: left;
+}
+.body .bd-left .text {
+  color: #fff;
+  font-size: 18px;
+}
+.body .bd-left .tab {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  margin-top: 80px;
+  background-color: #fffdf9;
+  border-radius: 14px;
+  width: 100%;
+  height: 28px;
+  margin-bottom: 60px;
+  opacity: 0.8;
+}
+.body .bd-left .tab .new {
+  position: absolute;
+  width: 47px;
+  height: 20px;
+  left: 10px;
+  margin-top: 4px;
+  background-image: url(../images/new.png);
+}
+.body .bd-left .tab .tab-text {
+  padding-left: 75px;
+  line-height: 28px;
+  color: #33333d;
+}
+.body .bd-left .tab .arrow {
+  position: absolute;
+  width: 5px;
+  top: 10px;
+  right: 10px;
+  height: 10px;
+  background-image: url(../images/right.png);
+}
+.body .bd-left .nva {
+  padding-top: 60px;
+}
+.body .bd-left .nva .anniu {
+  padding: 15px 0;
+}
+.body .bd-left .nva .anniu > a {
+  color: #fff;
+  display: block;
+  width: 126px;
+  line-height: 28px;
+  text-align: center;
+  background-image: url(../images/Button.png);
+  font-size: 14px;
+  text-decoration: none;
+}
+.body .bd-left .more {
+  margin-top: 100px;
+  color: #7e92d7;
+}
+.body .bd-right {
+  float: left;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+.body .bd-right .image {
+  width: 100%;
+  height: 100%;
+}
+.body .bd-right .image img {
+  width: 100%;
+  height: 100%;
+}
+.foot {
+  background: #191925;
+  min-height: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.foot p {
+  text-align: center;
+  font-size: 12px;
+  color: #475478;
+}
+.foot .contact {
+  margin-top: 30px;
+}

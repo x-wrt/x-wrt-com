@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>X-Wrt</title>
+    <title>x-wrt</title>
+    <script src="./nodejs/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="./nodejs/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./index.css">
-    <script src="./nodejs/jquery/dist/jquery.js"></script>
-    <script src="./nodejs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./nodejs/bootstrap/dist/js/bootstrap.js"></script>
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -21,77 +21,96 @@ var _hmt = _hmt || [];
 </head>
 <body>
    <header class="head">
-       <div class="btn-group left">
-           <a href="#"><font face="Arial Black" size="6">X</font><font size="5" face="Arial Black">-</font><font size="4" face="Arial Black">Wrt</font></a>
-       </div>
-       <div class="right">
-            <div class="btn-group download">
-                <button type="button" class=" bgc dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  下载 <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu menu">
-                  <li><a href="https://downloads.x-wrt.com/rom/">固件下载</a></li>
-                  <li><a href="https://downloads.x-wrt.com/">插件下载</a></li>
-                  <li><a href="https://downloads.x-wrt.com/">其他下载</a></li>
+        <div class="container">
+
+                <div class="brand" style="color:white">
+                    <font face="Arial Black" size="6">X</font>
+                    <font face="Arial Black" size="5">-</font>
+                    <font face="Arial Black" size="4">Wrt</font>
+                </div>
+                <ul class="navs">
+                        <li class="dropdown">
+                            <a href="#" class="menu" id='xiazai'>下载</a>
+                            <ul class="dropdown-menu" id="xiazai-menu">
+                                <li><a href="https://downloads.x-wrt.com/rom/">固件下载</a></li>
+                                <li><a href="https://downloads.x-wrt.com/">插件下载</a></li>
+                                <li class="last"><a href="https://downloads.x-wrt.com/">其他下载</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu" id='shequ'>社区</a>
+                            <ul class="dropdown-menu" id="shequ-menu">
+                                <li><a href="https://github.com/x-wrt/">源码地址</a></li>
+                                <li><a href="https://github.com/x-wrt/x-wrt/issues">提交需求</a></li>
+                                <li class="last"><a href="https://blog.x-wrt.com/">使用教程</a></li>
+                            </ul>
+                        </li>
+                        <li class="about"><a href="#">关于我们</a></li>
                 </ul>
-            </div>
-            <div class="btn-group download">
-                <button type="button" class=" bgc dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  社区 <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu menu">
-                  <li><a href="https://github.com/x-wrt/">源码地址</a></li>
-                  <li><a href="https://github.com/x-wrt/x-wrt/issues">提交需求</a></li>
-                  <li><a href="https://blog.x-wrt.com/">使用教程</a></li>
-                </ul>
-            </div>
-            <div class="btn-group about">
-               <a href="#">关于我们</a>
-            </div>
-       </div>
+
+        </div>
    </header>
-   <div class="container">
-     <div class="maincontainer">
-       <div class="decoration">
-            <span>X-Wrt是一个面向普通用户的路由系统，它基于OpenWrt项目做了许多易用性的改进，目标是成为一个标准的普通用户可以轻松使用的路由系统。</span>
-       </div>
-       <a class="tab" href="https://blog.x-wrt.com/" style="text-decoration:none">
-           <span class="new"></span>
-           <span class="tab-text">最新教程已经发布了。</span>
-           <span class="arrow"></span>
-       </a>
-       <div>
-           <div class="anniu">
-               <a href="https://downloads.x-wrt.com/rom/">固件下载</a>
+   <section class="body">
+       <div class="container zong">
+         <div class="row">
+           <div class="bd-left col-lg-6 col-md-6 col-xs-12">
+                <div class="text">
+                    <p>X-wrt是一个面向普通用户的路由系统，它基于openwrt项目做了许多易用性</p>
+                    <p>的改进，目标是成为一个标准化的普通用户可以轻松使用的路由器系统</p>
+                </div>
+                <div>
+                  <a href="https://blog.x-wrt.com/" class="tab">
+                    <span class="new"></span>
+                    <span class="tab-text">最新教程已经发布了。</span>
+                    <span class="arrow"></span>
+                 </a>
+                </div>
+                <ul class="nva">
+                    <li class="anniu"><a href="https://downloads.x-wrt.com/rom/">固件下载</a></li>
+                    <li class="anniu"><a href="https://downloads.x-wrt.com/">插件下载</a></li>
+                    <li class="anniu"><a href="https://downloads.x-wrt.com/">其他下载</a></li>
+                </ul>
+                <p class="more">更多功能和服务正在全力开发中，敬请期待</p>
            </div>
-           <div class="anniu">
-                <a href="https://github.com/x-wrt/">源码地址</a>
-            </div>
-            <div class="anniu">
-                <a href="https://github.com/x-wrt/x-wrt/issues">提交需求</a>
-            </div>
+           <div class="bd-right col-lg-6 col-md-6 col-xs-12">
+              <div class="image">
+                  <img id="dis-img" src="./images/image.png" alt="">
+              </div>
+           </div>
+         </div>
+
        </div>
-       <p class="more">更多功能和服务正在全力开发中，敬请期待</p>
-     </div>
-   </div>
-   <div class="container_end"><div id="preloadimg" style="visibility: hidden"></div></div>
+   </section>
    <footer class="foot">
-        <p class="p1">QQ群：<a href="https://jq.qq.com/?_wv=1027&k=5lxEDvm">131750901</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TG群：<a href="https://t.me/joinchat/IHqn_Rbk19VOfYQ1GZvKsw">X-Wrt</a></p>
-        <p class="p2">Copyright&nbsp;&copy;&nbsp;2019&nbsp;X-Wrt Team.保留所有权利。</p>
+       <p class="contact">
+           QQ群：
+           <a href="https://jq.qq.com/?_wv=1027&k=5lxEDvm">131750901</a>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TG群：
+           <a href="https://t.me/joinchat/IHqn_Rbk19VOfYQ1GZvKsw">X-Wrt</a>
+       </p>
+       <p>Copyright&nbsp;&copy;&nbsp;2019&nbsp;X-Wrt&nbsp;Team.保留所有权。</p>
    </footer>
 </body>
-<s>
-<script type="text/javascript">
+<script>
+    $(function() {
+        $(".dropdown:nth-child(1)").hover(function() {
+           $("#xiazai-menu").show()
+        },function() {
+            $("#xiazai-menu").hide()
+        })
+        $(".dropdown:nth-child(2)").hover(function() {
+            $("#shequ-menu").show()
+        },function() {
+            $("#shequ-menu").hide()
+        })
+   })
+
 var img_idx=0;
 var setImage = function()
 {
-	document.getElementsByClassName("container")[0].style.backgroundImage = "url(./images/image" + img_idx + ".png)";
-	document.getElementsByClassName("container")[0].style.backgroundRepeat = "no-repeat";
-	document.getElementsByClassName("container")[0].style.backgroundPosition = "right";
-	document.getElementsByClassName("container")[0].style.backgroundSize="580px";
-	img_idx++;
-	if (img_idx >= 5) img_idx = 0;
-	document.getElementById("preloadimg").style.backgroundImage = "url(./images/image" + img_idx + ".png)";
+	document.getElementById("dis-img").src = "./images/image" + img_idx + ".png"
+    img_idx++;
+    if (img_idx >= 5) img_idx = 0;
 }
 setImage();
 var it = setInterval(setImage, 5000);
